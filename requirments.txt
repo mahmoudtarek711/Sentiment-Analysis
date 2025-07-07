@@ -1,0 +1,28 @@
+fastapi
+uvicorn
+scikit-learn
+pandas
+numpy
+tweepy
+nltk
+joblib
+transformers
+# Core machine learning
+scikit-learn>=1.0
+pandas>=1.4
+numpy>=1.21
+joblib>=1.2
+
+# FastAPI & server
+fastapi>=0.95
+uvicorn[standard]>=0.22
+
+# Optional: For cleaning text (regex, stopwords)
+# You already use re (built-in) and sklearn's stopwords
+# So you DON'T need nltk unless you want advanced tokenization.
+
+# Plotting if you want to keep any training visualizations
+matplotlib>=3.5
+
+# Optional: if you use pydantic separately (FastAPI already includes it)
+pydantic>=1.10
